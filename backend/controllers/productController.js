@@ -39,24 +39,17 @@ exports.newProduct = catchAsyncErrors(async (req, res, next) => {
     })
 })
 
-
 // Get all products   =>   /api/v1/products?keyword=apple
 exports.getProducts = catchAsyncErrors(async (req, res, next) => {
-
     const resPerPage = 4;
     const productsCount = await Product.countDocuments();
-
     const apiFeatures = new APIFeatures(Product.find(), req.query)
         .search()
         .filter()
-
     let products = await apiFeatures.query;
     let filteredProductsCount = products.length;
-
     apiFeatures.pagination(resPerPage)
     products = await apiFeatures.query;
-
-
     res.status(200).json({
         success: true,
         productsCount,
@@ -64,14 +57,11 @@ exports.getProducts = catchAsyncErrors(async (req, res, next) => {
         filteredProductsCount,
         products
     })
-
 })
 
 // Get all products (Admin)  =>   /api/v1/admin/products
 exports.getAdminProducts = catchAsyncErrors(async (req, res, next) => {
-
     const products = await Product.find();
-
     res.status(200).json({
         success: true,
         products
@@ -135,8 +125,6 @@ exports.updateProduct = catchAsyncErrors(async (req, res, next) => {
         req.body.images = imagesLinks
 
     }
-
-
 
     product = await Product.findByIdAndUpdate(req.params.id, req.body, {
         new: true,
@@ -226,6 +214,7 @@ exports.getProductReviews = catchAsyncErrors(async (req, res, next) => {
         reviews: product.reviews
     })
 })
+
 
 // Delete Product Review   =>   /api/v1/reviews
 exports.deleteReview = catchAsyncErrors(async (req, res, next) => {

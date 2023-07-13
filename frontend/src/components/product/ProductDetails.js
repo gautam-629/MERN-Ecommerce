@@ -203,7 +203,6 @@ const ProductDetails = ({ match }) => {
                                                         value={comment}
                                                         onChange={(e) => setComment(e.target.value)}
                                                     >
-
                                                     </textarea>
 
                                                     <button className="btn my-3 float-right review-btn px-4 text-white" onClick={reviewHandler} data-dismiss="modal" aria-label="Close">Submit</button>
@@ -211,7 +210,6 @@ const ProductDetails = ({ match }) => {
                                             </div>
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
                         </div>
