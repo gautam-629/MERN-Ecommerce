@@ -1,8 +1,4 @@
-# ShopIT E-commerce Project
 
-> Complete E-commerce site built with Node.js, React, Redux, Express, MongoDB
-
-More about this project and course on Udemy. Course Name: [MERN Stack Full Ecommerce Site - Using React, Redux, Node.j](https://www.udemy.com/course/3678044)
 
 ### Env Variables
 
@@ -21,19 +17,18 @@ npm i
 npm i
 ```
 
-### Seed Database
+##Some ScreenShort 
+1. Home page
+![Home](https://res.cloudinary.com/dbvr3bxyv/image/upload/v1689223365/EcommerceScreenShort/Home_b8wpyq.png)
 
-Use the following commeand to put some dummy products in that database.
-Run it in the root folder.
+2. product Description page
+![productDes](https://res.cloudinary.com/dbvr3bxyv/image/upload/v1689223373/EcommerceScreenShort/descri_sxnwwx.png)
 
-```
-npm run seeder
-```
+3. Order Page
+!['orderpage'](https://res.cloudinary.com/dbvr3bxyv/image/upload/v1689223393/EcommerceScreenShort/orderPage_azb7nx.png)
 
+4. Admin Dashboard
+ ![admin ](https://res.cloudinary.com/dbvr3bxyv/image/upload/v1689223376/EcommerceScreenShort/AdminDashBoradoverall_zgsbiz.png)
 
-
-
-
-
-
-
+5. Order Status
+![orderstatus](https://res.cloudinary.com/dbvr3bxyv/image/upload/v1689223379/EcommerceScreenShort/orderStatus_w3crvw.png)
